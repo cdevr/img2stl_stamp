@@ -2,6 +2,7 @@
 
 import argparse
 
+from PIL import Image
 import numpy as np
 from stl import mesh
 

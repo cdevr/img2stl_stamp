@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+"""A small tool to make stamp stl files from black on white background images."""
 
 import argparse
 
@@ -7,6 +8,7 @@ import numpy as np
 from stl import mesh
 
 def img2stl(fn, output):
+		"read the file in fn and produces an stl to save to output"
 		im = Image.open(fn)
 		im = im.convert('L')
 
